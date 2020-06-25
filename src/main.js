@@ -7,7 +7,6 @@ let config =
     height: 480
 };
 
-
 //create main game object
 console.log("creating main game object...");
 let game = new Phaser.Game(config);
