@@ -11,6 +11,9 @@ class Rocket extends Phaser.GameObjects.Sprite
 
         //create a custom property for the rocket to track firing status
         this.isFiring = false;
+
+        //add rocket sound effect
+        this.sfxRocket = scene.sound.add("sfx_rocket");
     }
 
     update()
@@ -29,9 +32,12 @@ class Rocket extends Phaser.GameObjects.Sprite
         }
 
         //isDown checks if button is down coninuously, JustDown is for single presses
-        if(Phaser.Input.Keyboard.JustDown(keyF))
+        if(Phaser.Input.Keyboard.JustDown(keyF) && !this.isFiring)
         {
             this.isFiring = true;
+
+            //play sound effect
+            this.sfxRocket.play();
         }
 
         //if fired, move up

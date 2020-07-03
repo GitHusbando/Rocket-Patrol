@@ -1,3 +1,8 @@
+//i didn't even think it was possible, but i somehow DELETED my finished game code from github
+//like, even from the commit history wtf
+//i mean, it might be somewhere i can't find maybe?
+//anyway, i redid the parts that got deleted by copying them from my modded game
+
 //create game configuration object
 console.log("creating game configuration object...");
 
